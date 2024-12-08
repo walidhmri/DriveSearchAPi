@@ -87,7 +87,9 @@ def display_results():
     if file_info:
         for path, url in file_info:
             result_text.insert(tk.END, f"Path: {path}\n", ("path_style",))
-            result_text.insert(tk.END, f"URL: {url}\n\n", ("link_style",))
+            url_button = ttk.Button(result_text, text="Open File", command=lambda url=url: webbrowser.open(url))
+            result_text.window_create(tk.END, window=url_button)
+            result_text.insert(tk.END, "\n\n")
     else:
         result_text.insert(tk.END, "No files found matching the keyword.")
 
