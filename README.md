@@ -15,7 +15,7 @@ Ce projet permet de rechercher des fichiers sur Google Drive à l'aide de l'API 
 
 ## Fichiers nécessaires
 
-- **file.json** : Fichier de credentials obtenu depuis la console Google Cloud pour activer l'API Google Drive.
+- **file.json** : Fichier de credentials obtenu depuis la console Google Cloud pour activer l'API Google Drive***** Modifier le fichiers avec votre propre donnees.
 - **token.json** : Ce fichier est généré automatiquement après la première authentification. Il contient les informations d'authentification nécessaires pour accéder à Google Drive.
 - **Python script** : Le script principal contenant le code pour l'interface graphique et l'accès à Google Drive.
 
